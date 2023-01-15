@@ -1,4 +1,3 @@
-
 /* //////////................Common styles start.................//////// */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
 
@@ -194,7 +193,6 @@ a.active-menu{
 }
 .work{
     display: flex;
-    justify-content: space-between;
     gap: 20px;
 }
 .work-wrap h2{
@@ -340,11 +338,11 @@ a.active-menu{
     font-size: 20px;
     text-align: center;
 }
-/* //////////................Media-quiry styles start.................//////// */
+/* //////////................Media-query styles start.................//////// */
 
-/* //////////................Media-quiry (Mobile device) styles start.................//////// */
+/* //////////................Media-query (Mobile device) styles start.................//////// */
 @media screen and (max-width: 576px) {
-    .Features-top-section, .Features-bottom-section, .purchase-section, .Facts-section, .Sponspors-section, .footer{
+    .Features-top-section, .purchase-section, .Facts-section, .work-section, .Sponspors-section, .footer{
         margin-bottom: 30px;
     }
     .header{
@@ -389,6 +387,7 @@ a.active-menu{
     }
     .Features-bottom-section{
         gap: 10px;
+        margin-bottom: 50px;
     }
     .Features-bottom-image img {
         height: 100%;
@@ -422,4 +421,92 @@ a.active-menu{
         gap: 20px;
     }
 }
-/* //////////................Common styles start.................//////// */
+
+/* //////////................Media-query (tab device) styles start.................//////// */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .Features-top-section, .purchase-section, .Facts-section, .work-section, .Sponspors-section, .footer{
+        margin-bottom: 30px;
+    }
+    .header{
+        width: 100%;
+    }
+    .nav, .menu, .Features-top-section, .Features-bottom-section{
+        flex-direction: column;
+    }
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 14px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .menu a{
+        padding: 10px;
+    }
+    .banner-info{
+        width: 100%;
+    }
+    .banner-heading{
+        font-size: 34px;
+    }
+
+    .main{
+        padding: 0px;
+    }
+    .primary-heading{
+        font-size: 35px;
+    }
+    .Features-top-section{
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+    .Features-gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .work-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Features-gallery img{
+        width: 100%;
+        height: 100%;
+    }
+    .Features-bottom-section{
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+    .Features-bottom-image img {
+        height: 100%;
+        width: 100%;
+    }
+    .Features-button {
+        bottom: -25px;
+        left: -10px;
+        padding: 10px;
+    }
+    .ten-years {
+        font-size: 35px;
+    }
+    .Features-button p {
+        font-size: 16px;
+    }
+    .purchase-container{
+        gap: 20px;
+    }
+    .work-wrap h2 {
+        margin-bottom: 10px;
+        font-size: 21px;
+    }
+    .fects-container {
+        gap: 30px;
+        margin: 30px 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .sponsers, .purchase-container {
+        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
